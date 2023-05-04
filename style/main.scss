@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  align-items: center;
+  padding: 1em 2em;
+  max-width: 1300px;
+  margin: 1em auto;
+  margin-bottom: 0;
+  border-radius: 5px;
+  span {
+    font-size: 2em;
+    color: cornflowerblue;
+    background-color: white;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      margin: 0 0.5em;
+      a {
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        font-size: 1.5em;
+        padding: 0.5em 1em;
+        background-color: white;
+        color: cornflowerblue;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+        &:hover {
+          background-color: rgb(9, 37, 65);
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  height: 75vh;
+}
+
+.addForm {
+  width: 100%;
+  max-width: 400px;
+  background-color: cornflowerblue;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  h1 {
+    margin: 0;
+  }
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0.5em 0;
+    label {
+      color: white;
+      font-size: 1.5em;
+    }
+    input {
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.3em;
+      padding: 0.5em 1em;
+      color: cornflowerblue;
+    }
+  }
+  input[type="submit"] {
+    outline: none;
+    background-color: white;
+    color: cornflowerblue;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.5em;
+    padding: 0.3em 0;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(9, 37, 65);
+      color: white;
+    }
+  }
+}
+
+h1 {
+  font-size: 3em;
+  color: cornflowerblue;
+  width: 100%;
+  text-align: center;
+}
